@@ -69,7 +69,6 @@
 		0E38716F22F831AF00A2C14C /* APIModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIModel.swift; sourceTree = "<group>"; };
 		0E38717122F833D600A2C14C /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		0E38717322F833FE00A2C14C /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
-		0E38717722F8576B00A2C14C /* Alamofire.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Alamofire.swift; path = Pods/Alamofire/Source/Alamofire.swift; sourceTree = "<group>"; };
 		0EC832DC22F9793B00D608DD /* ResponseError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseError.swift; sourceTree = "<group>"; };
 		151136031382615201A6BA45 /* Pods_TestApplicationTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestApplicationTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		21CF9880476C231B8BCB52F0 /* Pods_TestApplication.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestApplication.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -137,7 +136,6 @@
 		0E38712622F823F700A2C14C = {
 			isa = PBXGroup;
 			children = (
-				0E38717722F8576B00A2C14C /* Alamofire.swift */,
 				0E38713122F823F800A2C14C /* TestApplication */,
 				0E38714622F823FF00A2C14C /* TestApplicationTests */,
 				0E38715122F823FF00A2C14C /* TestApplicationUITests */,
@@ -331,7 +329,7 @@
 				0E38712B22F823F800A2C14C /* Sources */,
 				0E38712C22F823F800A2C14C /* Frameworks */,
 				0E38712D22F823F800A2C14C /* Resources */,
-				83ECEF91B987318A94067D29 /* [CP] Embed Pods Frameworks */,
+				9A16F1A46AB3B00C75E62841 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -473,7 +471,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		83ECEF91B987318A94067D29 /* [CP] Embed Pods Frameworks */ = {
+		9A16F1A46AB3B00C75E62841 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -735,7 +733,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.eyepax.TestApplication;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -754,7 +752,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.eyepax.TestApplication;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
